@@ -30,9 +30,9 @@ button:hover{opacity:.9}
   <button id="startBtn">Tap to Begin 🎵</button>
 </div>
 
-<!-- Audio -->
+<!-- Audio using GitHub raw link -->
 <audio id="bgm" loop>
-  <source src="rose-music.mp3" type="audio/mpeg">
+  <source src="https://raw.githubusercontent.com/gaminggurung15-collab/rose-day/main/rose-music.mp3" type="audio/mpeg">
 </audio>
 
 <!-- Pages -->
@@ -125,7 +125,7 @@ document.getElementById("startBtn").addEventListener("click", function(){
   createPetals();
   const audio = document.getElementById("bgm");
   audio.play().then(()=>console.log("Music playing")).catch(err=>{
-    alert("Tap the screen again to allow music!");
+    alert("Tap again to allow music!");
   });
 });
 </script>
